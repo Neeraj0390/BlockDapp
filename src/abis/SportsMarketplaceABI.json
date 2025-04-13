@@ -4,11 +4,6 @@
     "sourceName": "contracts/Marketplace.sol",
     "abi": [
       {
-        "inputs": [],
-        "stateMutability": "nonpayable",
-        "type": "constructor"
-      },
-      {
         "anonymous": false,
         "inputs": [
           {
@@ -108,6 +103,24 @@
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "itemId",
+            "type": "uint256"
+          }
+        ],
+        "name": "purchaseMarketItem",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
       },
       {
         "inputs": [
@@ -282,19 +295,6 @@
       },
       {
         "inputs": [],
-        "name": "fixedReceiver",
-        "outputs": [
-          {
-            "internalType": "address payable",
-            "name": "",
-            "type": "address"
-          }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [],
         "name": "owner",
         "outputs": [
           {
@@ -304,19 +304,6 @@
           }
         ],
         "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [
-          {
-            "internalType": "uint256",
-            "name": "itemId",
-            "type": "uint256"
-          }
-        ],
-        "name": "purchaseMarketItem",
-        "outputs": [],
-        "stateMutability": "payable",
         "type": "function"
       }
     ],
